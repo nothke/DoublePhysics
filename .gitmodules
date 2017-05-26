@@ -1,0 +1,3 @@
+[submodule "Assets/Vector3d"]
+	path = Assets/Vector3d
+	url = https://github.com/nothke/vector3d.git
