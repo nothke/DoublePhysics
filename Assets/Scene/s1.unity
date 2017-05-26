@@ -317,6 +317,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateTransform: 1
+  velocity:
+    x: 0
+    y: 0
+    z: 0
   startingForce: {x: 0, y: 0, z: 0}
 --- !u!114 &777222697
 MonoBehaviour:
@@ -329,6 +333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd1efc0e743a7a4298ec37fef96e122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position:
+    x: 0
+    y: 0
+    z: 0
 --- !u!4 &777222698
 Transform:
   m_ObjectHideFlags: 0
@@ -375,8 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e84208406639541996200e7395dc67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setOrbitalSpeedOnStart: 1
-  startAltitude: 300000
+  setOrbitalSpeedOnStart: 0
+  startAltitude: 0
 --- !u!96 &842827762
 TrailRenderer:
   serializedVersion: 2
@@ -500,6 +508,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateTransform: 0
+  velocity:
+    x: 0
+    y: 0
+    z: 0
   startingForce: {x: 2800, y: 0, z: 0}
 --- !u!54 &842827765
 Rigidbody:
@@ -558,6 +570,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd1efc0e743a7a4298ec37fef96e122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position:
+    x: 0
+    y: 0
+    z: 0
 --- !u!1 &913649669
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +822,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateTransform: 1
+  velocity:
+    x: 0
+    y: 0
+    z: 0
   startingForce: {x: 2800, y: 0, z: 0}
 --- !u!4 &1624790918
 Transform:
@@ -957,6 +977,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdd1efc0e743a7a4298ec37fef96e122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  position:
+    x: 0
+    y: 0
+    z: 0
 --- !u!1 &1819038042
 GameObject:
   m_ObjectHideFlags: 0

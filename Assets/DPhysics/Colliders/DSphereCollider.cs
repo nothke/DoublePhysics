@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DSphereCollider : DCollider
+public class DSphereCollider : DRigidbodyEffector
 {
 
     public double radius = 1;

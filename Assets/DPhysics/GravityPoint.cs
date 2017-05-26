@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GravityPoint : DCollider
+public class GravityPoint : DRigidbodyEffector
 {
     public double multiplier = 1000;
 

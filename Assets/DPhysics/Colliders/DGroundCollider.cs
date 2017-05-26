@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DGroundCollider : DCollider
+public class DGroundCollider : DRigidbodyEffector
 {
     protected override void Respond(DRigidbody drb)
     {

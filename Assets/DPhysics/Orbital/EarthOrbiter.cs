@@ -14,7 +14,6 @@ public class EarthOrbiter : MonoBehaviour
     {
         if (!enabled) return;
 
-        drb.startingForce = Vector3.zero;
         drb.position = new Vector3d(0, startAltitude + Earth.RADIUS, 0);
     }
 
