@@ -26,7 +26,6 @@ public class EarthOrbiter : MonoBehaviour
         if (setOrbitalSpeedOnStart)
         {
             double speed = GetCircularOrbitSpeed(r);
-            Debug.Log(speed);
             drb.velocity = new Vector3d(speed, 0, 0);
         }
     }

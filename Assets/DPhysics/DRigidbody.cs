@@ -40,11 +40,12 @@ public class DRigidbody : MonoBehaviour
         addedForce += force;
     }
 
+    /*
     void Update()
     {
         if (updateTransform)
             transform.position = WrappedPosition();
-    }
+    }*/
 
     private void FixedUpdate()
     {
