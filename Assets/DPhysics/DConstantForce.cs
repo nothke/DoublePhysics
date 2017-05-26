@@ -9,6 +9,9 @@ public class DConstantForce : MonoBehaviour
 
     public Vector3 force;
 
+    public GravityPoint gravityPoint;
+    public DSphereCollider dCollider;
+
     void FixedUpdate()
     {
         drb.AddForce(force);
