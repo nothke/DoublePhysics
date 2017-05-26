@@ -8,7 +8,7 @@ public class DGroundCollider : DCollider
     {
         if (drb.position.y > 0) return;
 
-        drb.position.y = 0;
+        drb.position = new Vector3d(drb.position.x, 0, drb.position.z);
         drb.velocity.y = 0;
     }
 }

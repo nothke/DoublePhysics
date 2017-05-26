@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(DTransform))]
 public class DCollider : MonoBehaviour
 {
     public Vector3d position { get { return new Vector3d(transform.position); } }
