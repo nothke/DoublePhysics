@@ -18,9 +18,12 @@ public class DRocketController : MonoBehaviour
     void Update()
     {
         Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        bool thrust = Input.GetButton("Jump");
 
-        rb.AddTorque(Vector3.forward * input.x * torqueMult);
-        drb.AddForce(transform.up * input.z * thrustMult);
+        rb.AddTorque(Vector3.forward * input.x * torqueMult + Vector3.right * input.z * torqueMult);
+
+        if (thrust)
+            drb.AddForce(transform.up * thrustMult);
     }
 
     private void OnDrawGizmos()
