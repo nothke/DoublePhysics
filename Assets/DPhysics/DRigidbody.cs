@@ -15,9 +15,6 @@ public class DRigidbody : MonoBehaviour
     public Vector3d position { get { return dTransform.position; } set { dTransform.position = value; } }
     public Vector3d velocity;
 
-    Vector3d gravity = new Vector3d(0, 0, 0);
-    //Vector3d gravity = new Vector3d(0, -9.81, 0);
-
     Vector3d addedForce;
 
     void Start()
@@ -36,7 +33,7 @@ public class DRigidbody : MonoBehaviour
         addedForce += force;
     }
 
-    
+
     void Update()
     {
         if (updateTransform)
@@ -45,15 +42,14 @@ public class DRigidbody : MonoBehaviour
 
     private void FixedUpdate()
     {
-        velocity += (gravity + addedForce) * DeltaTime;
+        velocity += (addedForce) * DeltaTime;
 
         position += velocity * DeltaTime;
         addedForce = Vector3d.zero;
     }
 
-    Vector3 WrappedPosition()
+    Vector3 WrappedPosition(float limit = 1000)
     {
-        float limit = 1000;
         float x = (float)(Wrap(position.x, limit));
         float y = (float)(Wrap(position.y, limit));
         float z = (float)(Wrap(position.z, limit));
@@ -61,7 +57,7 @@ public class DRigidbody : MonoBehaviour
         return new Vector3(x, y, z);
     }
 
-    double Wrap(double d, double limit)
+    public static double Wrap(double d, double limit)
     {
         return ((d + limit) % (limit * 2)) - limit;
     }
